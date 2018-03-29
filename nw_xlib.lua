@@ -992,6 +992,9 @@ function app:main_display()
 			return d
 		end
 	end
+
+	-- if none matched, return the first display available
+	return self:displays()[1]
 end
 
 function app:active_display()
